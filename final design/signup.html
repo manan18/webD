@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://i.ibb.co/PDSpCYL/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,800');
+*{
+  font-family: 'Ubuntu';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.inputbox input{
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.signup{
+  background: linear-gradient(to left, #eb8e14, #ff9d00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  text-align: center;
+}
+.signup a{
+    color: #FFFFFF;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="signup">
+            <h1>Already have an account?</h1>
+            <span><a href="#">LogIn Here!</a></span>
+        </div>            
+        
+        <div class="form">
+            <form action="#">
+                <h1>SIGN UP</h1>
+                <div class="inputbox">
+                    <input type="text" placeholder="Create Username">
+                </div>
+                <div class="inputbox">
+                    <input type="password" placeholder="Create Password">
+                </div>
+                <div class="inputbox">
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+                <button>Sign Up</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
